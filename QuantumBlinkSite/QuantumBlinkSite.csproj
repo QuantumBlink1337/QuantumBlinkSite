@@ -12,6 +12,10 @@
 
   <ItemGroup>
     <Content Include="Pages\Counter.txt" />
+    <Content Update="Images\Headshot2020.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
