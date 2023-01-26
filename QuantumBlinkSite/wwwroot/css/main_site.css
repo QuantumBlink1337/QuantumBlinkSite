@@ -1,0 +1,52 @@
+﻿body, html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+.main-container{
+    background: gray;
+    width: 90%;
+    height: 90%;
+    border: solid 1px red;
+    display: flex;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.left-panel{
+    width: 70%;
+    height: 100%;
+    border: solid 1px blue;
+}
+
+.right-panel{
+    width: 30%;
+    height: 100%;
+    border: solid 1px lime;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 2.5em;
+}
+
+.content{
+    padding: 30px;
+    box-sizing: border-box;
+    border: solid 1px magenta;
+    line-height: 30px;
+}
+
+.image{
+    border: solid 1px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
