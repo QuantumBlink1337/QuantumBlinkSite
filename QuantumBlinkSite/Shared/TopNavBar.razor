@@ -1,10 +1,22 @@
 @* <h3>TopNavBar</h3> *@
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="https://www.google.com/">@Title</a>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">@Title</a>
+        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="False">Jobs</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">iD Tech</a></li>
+                    <li><a class="dropdown-item" href="#">iD Tech</a></li>
+                </ul>
+            </li>
+        </div>
+    </div>
 </nav>
 
 @code {
     [Parameter]
     public string? Title { get; set; }
+    
 }
