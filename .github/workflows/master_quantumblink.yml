@@ -27,13 +27,13 @@ jobs:
 
       - name: dotnet publish
         working-directory: ./QuantumBlinkSite
-        run: dotnet publish -c Release -o 
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/QuantumBlinkSite
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: .net-app
-          path: ./QuantumBlinkSite
+          path: ${{env.DOTNET_ROOT}}/QuantumBlinkSite
 
   deploy:
     runs-on: windows-latest
