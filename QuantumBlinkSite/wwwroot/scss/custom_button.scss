@@ -1,0 +1,7 @@
+﻿@import "../node_modules/bootstrap/scss/bootstrap";
+
+$mynewcolor:#5D3FD3;
+
+.btn-purple {
+  @include button-variant($mynewcolor, shade-color($mynewcolor, 7.5%), shade-color($mynewcolor, 10%), tint-color($mynewcolor,5%), tint-color($mynewcolor, 10%), shade-color($mynewcolor,30%));
+}
