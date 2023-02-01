@@ -18,4 +18,7 @@
     --bs-btn-disabled-bg: #5D3FD3;
     --bs-btn-disabled-border-color: #563ac3;
 }
+.bg-dark-purple {
+    background-color: #3a267e;
+}
 
